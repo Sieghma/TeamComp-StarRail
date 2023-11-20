@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Vina+Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 180vh;
+    background: url(https://dotesports.com/wp-content/uploads/2023/11/huohuo-looking-concerned-honkai-star-rail.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100px;
+    background-position: 90px ;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(https://upload-os-bbs.hoyolab.com/upload/2023/11/09/12488156/353b375cd8a5d4e60fb5cf78755af5d1_7098949295282988661.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+    background: url(https://upload-os-bbs.hoyolab.com/upload/2023/08/02/303052853/e49b2d81ff1c0b3b96f3ca5c31585dd9_9218728209766224747.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(3) {
+    background: url(http://www.haoling.cc/uploadfile/2023/1102/169889740394750.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box:nth-child(4) {
+    background: url(https://honkailab.com/wp-content/uploads/2023/02/Something-Irreplaceable_honkailab_genshinlab2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-box h3{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 0 0 3px rgba(27, 144, 194, 0.8);
+}
+
+.img-box:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover h3 {
+opacity: 1;
+bottom: 25px;
+}
